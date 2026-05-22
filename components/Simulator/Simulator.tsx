@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { DEVELOPMENT_PLANS, SIMULATION_CONFIG } from "@/config/simulationConfig";
+import { DEVELOPMENT_PLANS } from "@/config/simulationConfig";
 import { ContactForm } from "@/components/Simulator/ContactForm";
 import { FinalResult } from "@/components/Simulator/FinalResult";
 import { LeadEstimateResult } from "@/components/Simulator/LeadEstimateResult";
@@ -231,10 +231,6 @@ export function Simulator() {
             次へ
           </button>
         ) : null}
-      </div>
-
-      <div className="mt-6 rounded-md bg-slate-50 p-4 text-xs leading-6 text-slate-500">
-        基本料金は月額{SIMULATION_CONFIG.baseMonthlyFee.toLocaleString()}円、生徒ごとの費用は1人あたり月額{SIMULATION_CONFIG.perStudentMonthlyFee.toLocaleString()}円として試算します。
       </div>
     </div>
   );

@@ -12,8 +12,8 @@ export default function Home() {
     <main className="min-h-screen bg-slate-50">
       <section className="relative overflow-hidden bg-navy-900 text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(8,145,178,0.35),transparent_34%),linear-gradient(135deg,rgba(16,33,77,0),rgba(8,145,178,0.16))]" />
-        <div className="relative mx-auto grid max-w-6xl gap-7 px-4 py-10 sm:px-8 sm:py-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:py-20">
-          <div className="flex flex-col justify-center">
+        <div className="relative mx-auto max-w-6xl px-4 py-10 sm:px-8 sm:py-14 lg:py-20">
+          <div className="flex max-w-3xl flex-col justify-center">
             <div className="mb-6 w-full max-w-[320px] rounded-lg border border-cyan-300/20 bg-navy-800/90 px-4 py-3 shadow-lg shadow-cyan-950/20 sm:max-w-[420px] sm:px-5">
               <Image
                 src="/skillget-connect-logo.png"
@@ -39,23 +39,6 @@ export default function Home() {
             >
               無料でシミュレーションする
             </a>
-          </div>
-          <div className="rounded-lg border border-white/10 bg-white/10 p-4 shadow-soft backdrop-blur sm:p-5">
-            <div className="grid gap-3 sm:gap-4">
-              {[
-                ["標準見込み生徒", "7人"],
-                ["月間売上", "210,000円"],
-                ["黒字化ライン", "8人"],
-              ].map(([label, value]) => (
-                <div
-                  key={label}
-                  className="rounded-md border border-white/10 bg-white/10 p-4 sm:p-5"
-                >
-                  <p className="text-sm text-cyan-100">{label}</p>
-                  <p className="mt-2 text-2xl font-bold sm:text-3xl">{value}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
