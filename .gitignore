@@ -1,5 +1,8 @@
 .next
+.open-next
+.wrangler
 node_modules
 tsconfig.tsbuildinfo
 .env*.local
+.dev.vars
 *.log
